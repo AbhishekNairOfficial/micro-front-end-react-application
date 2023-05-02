@@ -1,7 +1,5 @@
 import './Home.css'
 import Header from '../modules/Header'
-import Footer from '../modules/Footer'
-import RightSidebar from '../modules/RightSidebar'
 import LeftSidebar from '../modules/LeftSidebar'
 import { ReactComponent as ReactLogo } from '../logo.svg'
 const Home = () => {
@@ -16,11 +14,7 @@ const Home = () => {
 			</header>
 			<div className='content'>
 				<LeftSidebar />
-				<RightSidebar />
 			</div>
-			<footer className='footer-container'>
-				<Footer />
-			</footer>
 		</div>
 	)
 }
