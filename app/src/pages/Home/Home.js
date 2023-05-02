@@ -1,7 +1,7 @@
 import './Home.css'
-import Header from '../modules/Header'
-import LeftSidebar from '../modules/LeftSidebar'
-import { ReactComponent as ReactLogo } from '../logo.svg'
+import Header from '../../modules/Header'
+import LeftSidebar from '../../modules/LeftSidebar'
+import { ReactComponent as ReactLogo } from '../../logo.svg'
 const Home = () => {
 	return (
 		<div className='App'>
