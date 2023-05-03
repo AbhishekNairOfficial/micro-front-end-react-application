@@ -4,8 +4,10 @@ import Header from '../../modules/Header'
 import LeftSidebar from '../../modules/LeftSidebar'
 import { ReactComponent as ReactLogo } from '../../logo.svg'
 import './Home.css'
+
 const Home = () => {
 	const { inProgress, accounts } = useMsal()
+
 	return (
 		<div className='App'>
 			<div className='main-app'>
