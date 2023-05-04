@@ -8,13 +8,16 @@ import './Home.css'
 const Home = () => {
 	const { inProgress, accounts } = useMsal()
 
+	const [account = {}] = accounts || []
+	const { name = '' } = account
+
 	return (
 		<div className='App'>
 			<div className='main-app'>
 				<h1>Main Application in</h1>
 				<ReactLogo className='react-logo' />
 				{inProgress === InteractionStatus.None && (
-					<div>{accounts[0].name} is logged in</div>
+					<div>{name} is logged in</div>
 				)}
 			</div>
 			<header className='header-container'>
