@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+const LOGO_IMAGE = require('../assets/logo.png');
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  private LOGO = require('../assets/logo.png');
+  private LOGO = LOGO_IMAGE;
 
   title = 'left-sidebar';
 }
