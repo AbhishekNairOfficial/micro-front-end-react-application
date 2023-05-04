@@ -15,7 +15,7 @@ const LoginPage = () => {
 
 	const onLogin = async () => {
 		await msalInstance.loginPopup({
-			redirectUri: `window.location.origin/home`,
+			redirectUri: `${window.location.origin}/home`,
 		})
 	}
 	return (
